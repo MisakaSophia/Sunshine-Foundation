@@ -421,6 +421,7 @@
     "output_name_desc_windows": "Ange manuellt en display som ska användas för att fånga. Om den avaktiveras fångas den primära displayen. Obs: Om du angav en GPU ovan måste denna display vara ansluten till den GPU. De lämpliga värdena kan hittas med följande kommando:",
     "output_name_unix": "Visa nummer",
     "output_name_windows": "Utdatanamn",
+    "output_name_vdd_option": "Jag vill ha VDD ~ ✨",
     "pair_max_attempts": "Gräns för PIN-parkopplingsförsök",
     "pair_max_attempts_desc": "Maximalt antal PIN-parkopplingsförsök per klient-IP under 60 sekunder. Intervall 0-50, 0 inaktiverar gränsen. Standard 10.",
     "ping_timeout": "Ping Timeout",

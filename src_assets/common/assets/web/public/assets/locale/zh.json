@@ -425,6 +425,7 @@
     "output_name_desc_windows": "指定用于捕获的显示器。若未设置，则捕获主显示器。注意：若已指定 GPU，此显示器必须连接到该 GPU。",
     "output_name_unix": "显示器编号",
     "output_name_windows": "输出显示器指定",
+    "output_name_vdd_option": "就是要用虚拟显示器～ ✨",
     "pair_max_attempts": "PIN 配对重试次数",
     "pair_max_attempts_desc": "同一 IP 在 60 秒内允许的配对次数。取值 0-50，0 表示关闭限速，默认 10。",
     "ping_timeout": "Ping 超时",

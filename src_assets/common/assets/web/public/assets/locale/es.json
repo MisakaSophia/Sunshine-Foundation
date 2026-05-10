@@ -421,6 +421,7 @@
     "output_name_desc_windows": "Especifique manualmente una pantalla a usar para capturar. Si no está activada, se captura la pantalla principal. Nota: Si ha especificado un GPU arriba, esta pantalla debe estar conectada a esa GPU. Los valores apropiados se pueden encontrar usando el siguiente comando:",
     "output_name_unix": "Mostrar número",
     "output_name_windows": "Nombre de salida",
+    "output_name_vdd_option": "¡Yo quiero VDD! ~ ✨",
     "pair_max_attempts": "Límite de reintentos de emparejamiento PIN",
     "pair_max_attempts_desc": "Máximo de intentos de emparejamiento PIN por IP de cliente en 60 segundos. Rango 0-50, 0 desactiva el límite. Valor predeterminado: 10.",
     "ping_timeout": "Tiempo de espera",
