@@ -1921,8 +1921,13 @@ namespace video {
       return -1;
     }
 
-    if (frame_nr != encoded_frame.frame_index) {
+    if (encoded_frame.frame_index > static_cast<uint64_t>(frame_nr)) {
+      // AMF returned a frame from the future — truly unexpected
       BOOST_LOG(error) << "AMF frame index mismatch " << frame_nr << " " << encoded_frame.frame_index;
+    }
+    else if (encoded_frame.frame_index < static_cast<uint64_t>(frame_nr)) {
+      // Normal pipeline latency: encoder buffered one frame and is returning a previous frame
+      BOOST_LOG(debug) << "AMF pipeline lag: submitted " << frame_nr << ", got " << encoded_frame.frame_index;
     }
 
     auto packet = std::make_unique<packet_raw_generic>(std::move(encoded_frame.data), encoded_frame.frame_index, encoded_frame.idr);
